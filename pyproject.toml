@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "mnist_proj"
+version = "0.1.0"
+description = "Mnist end-to-end Project"
+authors = ["Anuj Nair <nairanuj29@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+Flask = "^2.2.2"
+tensorflow = "2.8.0"
+pandas = "^1.4.3"
+numpy = "^1.23.1"
+seaborn = "^0.11.2"
+matplotlib = "^3.5.3"
+keras = "2.8.0rc0"
+notebook = "^6.4.12"
+jupyterthemes = "^0.20.0"
+protobuf = "3.19.0"
+sklearn = "^0.0"
+dash = "^2.6.1"
+dash-canvas = "^0.1.0"
+plotly = "^5.10.0"
+mypy = "^0.971"
+autopep8 = "^1.7.0"
+yapf = "^0.32.0"
+pylint = "^2.15.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

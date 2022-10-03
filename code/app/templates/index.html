@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block content %}
+<!-- <div class="row fixed-top">
+    <div class="header text-center">
+        <p class="h1">PROJECT MNIST</p>
+    </div>
+    <div class="header text-end">
+        <button type="button" class="btn btn-outline-secondary">Help <i class="fa fa-question-circle"></i></button>
+    </div>
+</div> -->
+
+<nav class="navbar fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PROJECT MNIST</a>
+    <div class="d-flex">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-placement="left"
+        data-bs-content="Draw a number in the blue box and click on classify to Classify the drawn number"
+        data-bs-original-title=""
+        title=""
+      >
+        Help <i class="fa fa-question-circle"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4 p-3 d-block">
+    <div class="row text-center">
+      <p class="h3">Canvas</p>
+    </div>
+    <div class="row">
+      <canvas id="canvas" class="border border-primary d-block m-2"></canvas>
+    </div>
+  </div>
+  <div class="col-md-7 p-3 d-block">
+    <div class="row text-center">
+      <p class="h3">Chart</p>
+    </div>
+    <div class="row">
+      <canvas id="chart" class="d-block m-2"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button type="button" class="btn btn-danger m-25 p-3" id="clear_button">
+      Clear
+    </button>
+    <button type="button" class="btn btn-primary m-25 p-3" id="classify_button">
+      Classify
+    </button>
+  </div>
+</div>
+{% endblock content %}
